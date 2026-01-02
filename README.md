@@ -39,8 +39,14 @@ K8sQuest includes **comprehensive safety guards** (enabled by default):
 
 ## Quick Start
 ```bash
-# One-time setup
+# One-time setup (interactive mode)
 ./install.sh
+
+# Or use an existing cluster
+./install.sh --cluster-context my-cluster-name
+
+# Or explicitly create a kind cluster
+./install.sh --kind
 
 # Start playing
 ./play.sh
